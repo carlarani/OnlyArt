@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Only Art | Minha conta</title>
+</head>
+<body class="body-static">
+    <header>
+        <form class="header-form-search">
+            <input id="header-input-search" type="search" placeholder="Pesquise por algo">
+        </form>
+        <div class="header-logo">
+            <a href="index.html"><h1><span id="header-logo-only">Only</span> <span id="header-logo-art">Art</span></h1></a>
+        </div>
+        <div class="header-icons">
+            <a href="account.html"><img class="header-icon" src="media\person.svg"></a> <!--PESSOINHA-->
+            <img class="header-icon" src="media\heart.svg"> <!--favoritos-->
+            <a href="account.html#compra"><img class="header-icon" src="media\cart.svg"></a> <!--carrinho-->
+        </div>
+    </header>
+    <hr>
+<main>
+
+    <section class="client-info">
+        <img id="client-photo" src="media\cliente.jpeg">
+        <ul>
+            <li>Nome</li>
+            <li>Endereço</li>
+        </ul>
+
+    </section>
+
+    <section class="buy-info">
+        <table id="compra">
+            <thead>
+                <th>Cód Produto</th>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço unitário</th>
+                <th>Subtotal</th>
+                <th></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>123</td>
+                    <td>Quadro minimalista</td>
+                    <td>R$ 1000</td>
+                    <td><input class="quantidade" type="number" value="1"></td>
+                    <td>R$ 1000</td>
+                    <td><a><img class="trash-icon" src="media\trash.svg"></a></td>
+                </tr>
+                <tr>
+                    <td>301</td>
+                    <td>Quadro abstrato</td>
+                    <td>R$ 300</td>
+                    <td><input class="quantidade" type="number" value="3"></td>
+                    <td>R$ 900</td>
+                    <td><a><img class="trash-icon" src="media\trash.svg"></a></td>
+                </tr>
+                <tr>
+                    <td>7863</td>
+                    <td>Quadro natureza</td>
+                    <td>R$ 1500</td>
+                    <td><input class="quantidade" type="number" value="2"></td>
+                    <td>R$ 3000</td>
+                    <td><a><img class="trash-icon" src="media\trash.svg"></a></td>
+                </tr>
+
+                <tr class="table-footer">
+                    <td class="table-footer-header" colspan="4">Total</td>
+                    <td colspan="2">R$ 4900</td>
+                </tr>
+                <tr class="table-footer">
+                    <td class="table-footer-header" colspan="4">Frete</td>
+                    <td colspan="2">R$ 100</td>
+                </tr>
+                <tr class="table-footer">
+                    <td class="table-footer-header" colspan="4">Total com frete</td>
+                    <td colspan="2">R$ 5000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button id="finalizar-compra">Finalizar compra</button>
+        
+
+    </section>
+</main>
+
+<footer>
+    <ul><h5>Galeria</h5>
+        <li><a href="index.html#obras">Obras</a></li>
+        <li><a href="about.html#artistas">Artistas</a></li>
+        <li><a href="about.html#eventos">Eventos</a></li>
+    </ul>
+    <ul><h5>Cuidados</h5>
+        <li>Conservação</li>
+        <li>Garantia</li>
+        <li>Trocas e devoluções</li>
+    </ul>
+    <ul><h5>Informações</h5>
+        <li>Política de privacidade</li>
+        <li>Fretes e prazos</li>
+        <li>Dúvidas frequentes</li>
+    </ul>
+
+    <!--Redes sociais-->
+    <div class="footer-bloco">
+        <a href="https://facebook.com/" target="_blank"><img class="icon-contact" src="media\facebook.svg"></a>
+        <a href="https://instagram.com/" target="_blank"><img class="icon-contact" src="media\instagram.svg"></a>
+        <a href="https://whatsapp.com/" target="_blank"><img class="icon-contact" src="media\whatsapp.svg"></a>
+        
+        <p>Desenvolvido por: Carla Rani</p>
+    </div>
+</footer>
+    
+</body>
+</html>

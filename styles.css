@@ -1,0 +1,352 @@
+:root{
+    --gold: #DAA520;
+    --silver:#B2B6BD;
+    --light-ref: #F7F4F3;
+    --dark-ref: #080708;
+}
+
+@font-face {
+    font-family: 'Nothing You Could Do', cursive;;
+    src: url("Nothing_You_Could_Do\NothingYouCouldDo-Regular.ttf");
+}
+
+body{
+    margin: unset;
+    font-family: Arial, Helvetica, sans-serif   ;
+    background-image: linear-gradient(var(--light-ref), var(--silver), var(--light-ref));
+    padding: 30px;
+    font-size: 20px;
+  }
+
+  .body-static{
+    background-image: none;
+    background-color: var(--light-ref);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nothing You Could Do';
+    text-shadow: 0.5px 0.5px black;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  button{
+    width: fit-content;
+    border: unset;
+    padding: 3px 10px;
+    background-color: var(--silver);
+    border-radius: 100px;
+  }
+  button:hover{
+    background-color: (var(--light-ref));
+    border: 1px dotted var(--silver);
+  }
+  button:active{
+    box-shadow: 3px 3px var(--silver);
+  }
+
+  header{
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+#header-input-search{
+    border: unset;
+    border-radius: 10px;
+    height: 1.5rem;
+    box-shadow: var(--silver) 1px 1px 2px;
+}
+
+.header-logo{
+    font-size: 2rem;
+}
+
+#header-logo-only{
+    color:var(--silver)
+}
+
+#header-logo-art{
+    color:var(--gold)
+}
+
+.header-icon{
+    width:30px;
+    opacity: 0.6;
+    margin: 5px;
+}
+
+.header-icon:hover{
+    zoom:1.05;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 60px;
+    font-family: 'Nothing You Could Do';
+    opacity: 0.7;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+}
+
+nav li:hover, footer li:hover{
+    font-weight: bold;
+}
+
+.header-capa{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#img-capa{
+    width: 70%;
+}
+
+main{
+    text-align: justify;
+    padding: 20px;
+}
+
+h2{
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.destaque{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0px 100px;
+}
+
+.produto{
+    margin-top: 100px;
+    width: 220px;
+    height: 220px;
+    position: relative;
+    text-align: center;
+    background-color: var(--light-ref);
+    box-shadow: black 1px 2px 5px;
+}
+
+.imagem-produto{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.imagem-produto:hover{
+    visibility: hidden;
+}
+
+.texto-produto{
+    vertical-align: middle;
+    width: inherit;
+    height: inherit;
+    line-height: 0.75rem;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.texto-produto:hover{
+    z-index: 1;
+    background-color: inherit;
+    opacity: 0.7;
+}
+
+
+#descricao{
+    font-size: 14px;
+    max-height: 60px;
+    overflow: scroll;
+
+}
+
+.section-pergunta{
+    margin-top: 80px;
+    width: 100%;
+    display: block;
+}
+
+section p, section h4, .cadastro-email{
+    display: flex;
+    justify-content: center;
+}
+
+.icons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icon-contact{
+    width: 30px;
+    margin: 20px;
+}
+
+.icon-contact:hover{
+    zoom:1.05;
+}
+
+
+.section-news{
+    margin: 80px 0px;
+}
+
+.foto-artista{
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    margin:20px;
+    float: left;
+}
+
+#artistas{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.artista p{
+    float: left;
+}
+
+#eventos{
+    min-height: 600px;
+    max-height: 700px;
+    vertical-align: middle;
+}
+
+#eventos-bg-img{
+    z-index: -1;
+    background-image: url(media\expo.jpeg);
+    width: 100%;
+    min-width: 300px;
+    height:500px;
+    opacity: 0.6;
+    position:relative;
+    top:-400px;
+    right:0px;
+    overflow: hidden;
+}
+
+table{
+    width: 70%;
+    text-align: center;
+    vertical-align: center;
+    margin: auto;
+    background-color: var(--light-ref);
+    opacity: 0.9;
+    overflow-wrap: break-word;
+
+}
+
+.month{
+    background-color: var(--silver);
+    font-family: "Nothing You Could Do";
+    border: none;
+}
+
+.client-info{
+    display: flex;
+    padding: 20px;
+}
+
+#client-photo{
+    border-radius: 150px;
+}
+
+.client-info ul{
+    margin-top: 50px;
+}
+
+
+#compra{
+    box-shadow: var(--silver) 2px 2px 4px;
+    border-collapse: collapse;
+    line-height: 3rem;
+}
+
+#compra tr{
+    box-shadow: var(--silver) 2px 2px 4px;
+    border-collapse: collapse;
+}
+
+.quantidade{
+    width: 30px;
+}
+
+.trash-icon:hover{
+    zoom:1.1;
+}
+
+#finalizar-compra{
+    margin:30px 30px 30px 75%;
+}
+
+#submit{
+    background-color: var(--gold);
+    color: white;
+    width:60%;
+    height: 200px;
+    padding: 30px;
+    border-radius: 100px;
+    box-shadow: 5px 5px darkgoldenrod;
+    margin: auto;
+}
+
+#submit-exit{
+    position:absolute;
+    right: 25%;
+}
+
+.table-footer{
+    background-color: var(--gold);
+    color: white;
+}   
+
+.table-footer-header{
+    text-align: right;
+}
+
+footer{
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    left:0;
+    background-color: var(--silver);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 2px dotted var(--light-ref);
+}
+
+ul{
+    list-style-type: none;
+    font-family: 'Nothing You Could Do';
+}
+
+h5{
+    font-size: 1.5rem;
+}
+
+.footer-bloco{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: flex-end;
+}
